@@ -24,13 +24,7 @@ class UserService
             "email" => $email
         ];
     }
-    /**
-     * Retorna um array com informações de um usuário baseado no ID fornecido.
-     * 
-     * @param mixed $id O identificador do usuário a ser buscado.
-     * @return mixed Um array contendo o ID, nome e email do usuário.
-     */
-
+   
     public function findUserById($id)
     {
         return [
