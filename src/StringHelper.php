@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Classe responsável por manipulações de strings, como conversão para formato "slug" e truncamento.
+ */
 class StringHelper
 {
 
@@ -16,6 +19,13 @@ class StringHelper
         return trim($text, '-');
     }
 
+    /**
+     * Trunca uma string para um limite especificado e adiciona reticências se necessário.
+     * 
+     * @param mixed $text O texto a ser truncado.
+     * @param mixed $limit O limite de caracteres para truncar o texto.
+     * @return mixed A string truncada ou o texto original se o limite não for excedido.
+     */
     public function truncate($text, $limit)
     {
         if (strlen($text) <= $limit) {
