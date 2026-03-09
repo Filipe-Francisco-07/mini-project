@@ -8,6 +8,13 @@
 class UserService
 {
 
+    /**
+     * Cria um novo usuário com um ID aleatório, nome e email fornecidos.
+     * 
+     * @param mixed $name O nome do usuário a ser criado.
+     * @param mixed $email O email do usuário a ser criado.
+     * @return mixed Um array contendo o ID, nome e email do usuário.
+     */
 
     public function createUser($name, $email)
     {
@@ -18,6 +25,12 @@ class UserService
         ];
     }
    
+    /**
+     * Retorna um array com informações de um usuário com base no ID fornecido.
+     * 
+     * @param mixed $id O identificador do usuário a ser buscado.
+     * @return mixed Um array contendo os dados do usuário, incluindo id, nome e email.
+     */
 
     public function findUserById($id)
     {
